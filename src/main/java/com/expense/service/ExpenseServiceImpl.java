@@ -31,6 +31,8 @@ public class ExpenseServiceImpl implements ExpenseService {
 
     @Override
     public List<CategoryVo> getCategories() {
+
+        System.out.println("executing getCategories method!!");
         return expenseRepository.getCategories();
     }
 }
